@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"_tpk\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_tpk:adv/was_winner"
+  }
+}

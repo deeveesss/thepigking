@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "player",
+      "advancements": {
+        "_tpk:root": true,
+        "minecraft:adventure/sleep_in_bed": true
+      }
+    }
+  }
+}

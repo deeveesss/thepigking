@@ -1,0 +1,43 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "distance": {
+          "absolute": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:shield"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "distance": {
+          "absolute": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "equipment": {
+          "offhand": {
+            "items": [
+              "minecraft:shield"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

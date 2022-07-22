@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_axe"
+    },
+    "title": "The Pig King",
+    "description": "Let the games begin",
+    "background": "minecraft:textures/block/gilded_blackstone.png",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "#_tpk:piglike"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_tpk:adv/root",
+    "experience": 2
+  }
+}
