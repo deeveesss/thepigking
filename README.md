@@ -5,5 +5,5 @@ Set your spawn point (sleep at night) and kill a pig, then hope for the best.
 
 To uninstall:
 ```mcfunction
-/function _tpk:uninstall
+function _tpk:uninstall
 ```
