@@ -2,7 +2,7 @@
 execute unless entity @s[predicate=_tpk:ai/has_bow] if score %gear_lvl _tpk matches 0 run item replace entity @s weapon.mainhand with crossbow
 
 # Gear Tier 1
-execute unless entity @s[predicate=_tpk:ai/has_bow] if score %gear_lvl _tpk matches 1 run item replace entity @s weapon.mainhand with crossbow{Enchantments:[{id:"minecraft:quick_charge",lvl:1s}],Charged:1b}
+execute unless entity @s[predicate=_tpk:ai/has_bow] if score %gear_lvl _tpk matches 1 run item replace entity @s weapon.mainhand with crossbow{Enchantments:[{id:"minecraft:quick_charge",lvl:1s}],ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{Potion:"minecraft:weakness"}},{},{}],Charged:1b}
 
 # Gear Tier 2
 execute unless entity @s[predicate=_tpk:ai/has_bow] if score %gear_lvl _tpk matches 2 run item replace entity @s weapon.mainhand with crossbow{Enchantments:[{id:"minecraft:multishot",lvl:1s},{id:"minecraft:quick_charge",lvl:2s}],ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{Potion:"minecraft:weakness"}},{id:"minecraft:tipped_arrow",Count:1b,tag:{Potion:"minecraft:poison"}},{id:"minecraft:tipped_arrow",Count:1b,tag:{Potion:"minecraft:poison"}}],Charged:1b}

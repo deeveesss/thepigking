@@ -16,8 +16,8 @@ execute if score %item_cd _tpk matches 0 run function _tpk:ai/use_item
 execute if entity @p[distance=..64] if entity @e[type=#_tpk:teamup,distance=..16] run function _tpk:ai/make_safe
 
 # Swap equipment 
-execute if entity @p[sort=nearest,distance=..3] run function _tpk:ai/set_melee
-execute if entity @p[sort=nearest,distance=4..16] run function _tpk:ai/set_ranged
+execute if entity @p[sort=nearest,distance=5..16] unless entity @p[sort=nearest,distance=..4.5] run function _tpk:ai/set_ranged
+execute if entity @p[sort=nearest,distance=..4.5] run function _tpk:ai/set_melee
 
 # Water and lava
 execute if predicate _tpk:ai/swim unless predicate _tpk:ai/riding run function _tpk:ai/swim
