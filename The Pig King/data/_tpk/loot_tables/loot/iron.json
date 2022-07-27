@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ore",
+          "name": "minecraft:raw_iron",
           "functions": [
             {
               "function": "minecraft:set_count",
