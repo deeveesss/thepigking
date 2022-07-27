@@ -1,9 +1,8 @@
 # Initiate recusion
 schedule function _tpk:loop 1s
 
-# Adjust global variables
-execute if score %king_cd _tpk matches 1.. run scoreboard players remove %king_cd _tpk 1
-execute if score %item_cd _tpk matches 1.. run scoreboard players remove %item_cd _tpk 1
+# Adjust global vars
+function _tpk:ai/vars
 
 # Remove extras
 execute if entity @e[tag=_tpkstatus] run kill @e[tag=_tpkstatus]

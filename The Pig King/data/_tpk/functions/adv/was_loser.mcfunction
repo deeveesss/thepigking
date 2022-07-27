@@ -3,7 +3,7 @@ tellraw @a ["",{"text":"The Pig King was defeated by "},{"selector":"@s"},{"text
 tellraw @a "<The Pig King> ok"
 
 # Reset to short timer for revenge
-execute store result score %king_cd _tpk run loot spawn ~ ~ ~ loot _tpk:spawn/short
+function _tpk:ai/spawn_fast
 
 # Revoke advancement for reapplication
 advancement revoke @s only _tpk:was_loser

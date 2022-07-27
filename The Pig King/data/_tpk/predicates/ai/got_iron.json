@@ -8,7 +8,8 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "minecraft:story/smelt_iron": true
+            "minecraft:story/smelt_iron": true,
+            "_tpk:root": true
           }
         }
       }
@@ -20,7 +21,8 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "minecraft:story/iron_tools": true
+            "minecraft:story/iron_tools": true,
+            "_tpk:root": true
           }
         }
       }
@@ -32,7 +34,8 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "minecraft:story/obtain_armor": true
+            "minecraft:story/obtain_armor": true,
+            "_tpk:root": true
           }
         }
       }

@@ -8,7 +8,8 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "minecraft:story/enter_the_nether": true
+            "minecraft:story/enter_the_nether": true,
+            "_tpk:root": true
           }
         }
       }
@@ -20,7 +21,8 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "minecraft:nether/root": true
+            "minecraft:nether/root": true,
+            "_tpk:root": true
           }
         }
       }

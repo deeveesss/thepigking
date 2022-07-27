@@ -6,8 +6,8 @@ execute if predicate _tpk:ai/riding run tp @e[tag=_mount] ~ -256 ~
 tp @s ~ -256 ~
 kill @s
 
-# Reset spawn cd
-execute store result score %king_cd _tpk run loot spawn ~ ~ ~ loot _tpk:spawn/short
+# Reset spawn
+function _tpk:ai/spawn_fast
 
 # Snark
 tellraw @a "<The Pig King> be back soon"
