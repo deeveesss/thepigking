@@ -17,6 +17,8 @@ scoreboard players reset %player_y
 scoreboard players reset %gear_lvl
 scoreboard objectives remove _tpk
 
-# Snark
-tellraw @a "<The Pig King> i am pig. you? chicken."
+# Uninstall message
 tellraw @a ["",{"text":"[datapack] "},{"text":"The Pig King ","color":"gold"},{"text":"uninstalled!"}]
+
+# Snark
+function _tpk:snark/uninstall

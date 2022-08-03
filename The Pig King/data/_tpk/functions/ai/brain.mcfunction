@@ -1,4 +1,7 @@
-# Target player always
+# Hide if no player in range
+execute unless entity @p[predicate=_tpk:root,distance=..64] run function _tpk:ai/hide
+
+# Target nearest player always
 data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[predicate=_tpk:root,sort=nearest] UUID
 
 # High / low value checker
@@ -13,7 +16,7 @@ execute if block ~ ~1 ~ #_tpk:pass if data entity @s IsBaby run data remove enti
 execute if score %item_cd _tpk matches 0 run function _tpk:ai/use_item
 
 # Influence mobs
-execute if entity @p[distance=..64] if entity @e[type=#_tpk:teamup,distance=..16] run function _tpk:ai/make_safe
+execute if entity @p[predicate=_tpk:root,distance=..32] if entity @e[type=#_tpk:teamup,distance=..16] run function _tpk:ai/make_safe
 
 # Swap equipment 
 execute if entity @p[distance=6..16] unless entity @p[distance=..5] run function _tpk:ai/set_ranged
@@ -30,6 +33,3 @@ execute if entity @p[predicate=_tpk:root,distance=17..63] if predicate _tpk:ai/r
 # Break closed doors
 execute if block ^ ^1 ^1 #minecraft:doors[open=false] run setblock ^ ^1 ^1 minecraft:air destroy
 execute if block ^ ^2 ^ #minecraft:trapdoors[open=false] run setblock ^ ^2 ^ minecraft:air destroy
-
-# Hide if no player in range
-execute unless entity @p[predicate=_tpk:root,distance=..64] run function _tpk:ai/hide

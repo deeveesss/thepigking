@@ -7,5 +7,5 @@ execute if score %random _tpk matches 41..50 run scoreboard players set %king_cd
 execute if score %random _tpk matches 51..60 run scoreboard players set %king_cd _tpk 1025
 execute if score %random _tpk matches 61..70 run scoreboard players set %king_cd _tpk 1070
 execute if score %random _tpk matches 71..80 run scoreboard players set %king_cd _tpk 1115
-execute if score %random _tpk matches 81..90 run scoreboard players set %king_cd _tpk 1150
-execute if score %random _tpk matches 91..100 run scoreboard players set %king_cd _tpk 1195
+execute if score %random _tpk matches 81..90 run scoreboard players set %king_cd _tpk 1160
+execute if score %random _tpk matches 91..100 run scoreboard players set %king_cd _tpk 1205

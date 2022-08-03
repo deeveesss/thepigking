@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dandelion"
+    },
+    "title": "What a Noble Gesture",
+    "description": "Atone for your sins by bathing with a dandelion... in a lava cauldron",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "_tpk:dis_winner",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "_tpk:root": true
+            }
+          },
+          "location": {
+            "block": {
+              "blocks": [
+                "minecraft:lava_cauldron"
+              ]
+            }
+          },
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:dandelion"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_tpk:adv/sacrifice"
+  }
+}

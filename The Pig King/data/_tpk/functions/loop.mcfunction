@@ -12,4 +12,4 @@ execute unless entity @e[tag=_tpk] run tp @e[tag=_mount] ~ -256 ~
 execute if entity @e[tag=_tpk] as @e[tag=_tpk] at @s run function _tpk:ai/brain
 
 # Appear if not spawned
-execute unless entity @e[tag=_tpk] if score %king_cd _tpk matches 0 as @r[predicate=_tpk:root] at @s if entity @e[predicate=_tpk:mob] run function _tpk:ai/start
+execute unless entity @e[tag=_tpk] if score %king_cd _tpk matches 0 as @r[predicate=_tpk:root] at @s if entity @e[type=#_tpk:mobs,distance=..14] run function _tpk:ai/start

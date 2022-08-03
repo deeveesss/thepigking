@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blaze_powder"
+    },
+    "title": "Down with the King",
+    "description": "Manage to defeat The Pig King",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "_tpk:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"_tpk\"]}"
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@
       "type": "player",
       "advancements": {
         "_tpk:root": true,
+        "_tpk:dis_sacrifice": false,
         "minecraft:adventure/sleep_in_bed": true
       }
     }

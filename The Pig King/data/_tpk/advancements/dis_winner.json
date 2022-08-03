@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "title": "Hail to the King",
+    "description": "Fall victim to The Pig King's wrath",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "_tpk:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"_tpk\"]}"
+        }
+      }
+    }
+  }
+}

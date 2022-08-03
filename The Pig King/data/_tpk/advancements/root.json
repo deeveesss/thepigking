@@ -1,13 +1,14 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:netherite_axe"
+      "item": "minecraft:netherite_sword"
     },
-    "title": "The Pig King",
-    "description": "Let the games begin",
+    "title": "The King's Vengeance",
+    "description": "The great Pig King has set his eyes upon you...",
     "background": "minecraft:textures/block/gilded_blackstone.png",
+    "frame": "goal",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": true
   },
   "criteria": {

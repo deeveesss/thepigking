@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "_tpk:dis_sacrifice": true
+            }
+          }
+        },
+        "entity": {
+          "type": "#_tpk:piglike"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_tpk:adv/sacrifice_off",
+    "experience": 2
+  }
+}
